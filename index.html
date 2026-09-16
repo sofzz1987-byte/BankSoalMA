@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Soal MA</title>
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>📚 Bank Soal MA</h1>
+  <p>Sistem Ujian Online Madrasah Aliyah</p>
+</header>
+
+<div class="container" id="start-screen">
+  <div class="card">
+    <h2>Selamat Datang!</h2>
+    <p>Silakan isi data sebelum memulai ujian.</p>
+    <input type="text" id="nama-siswa" placeholder="Nama Lengkap">
+    <select id="pilih-mapel">
+      <option value="">-- Pilih Mata Pelajaran --</option>
+      <option value="matematika">Matematika</option>
+      <option value="bahasa">Bahasa Indonesia</option>
+      <option value="agama">Pendidikan Agama Islam</option>
+    </select>
+    <button id="btn-mulai">Mulai Ujian</button>
+  </div>
+</div>
+
+<div class="container hidden" id="quiz-screen">
+  <div class="quiz-top">
+    <div class="info-siswa">
+      <span id="info-nama"></span> | <span id="info-mapel"></span>
+    </div>
+    <div class="timer" id="timer">⏱ 00:00</div>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+  <p class="progress-text" id="progress-text">Soal 1 dari 10</p>
+
+  <div class="card soal-card">
+    <h3 id="soal-teks">Teks soal muncul di sini</h3>
+    <div id="opsi-container"></div>
+  </div>
+
+  <div class="nav-buttons">
+    <button id="btn-prev">⬅ Sebelumnya</button>
