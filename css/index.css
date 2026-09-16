@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: #eef2f7;
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  margin-top: 5px;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+#start-screen .card h2 {
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+#start-screen .card p {
+  margin-bottom: 20px;
+  color: #667;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccd6e0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #1e3c72;
+}
+
+button:disabled {
+  background: #b0bcc9;
+  cursor: not-allowed;
+}
+
+.quiz-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.timer {
+  background: #ff5b5b;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background: #dde4ec;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: #667;
+  margin-bottom: 15px;
+}
+
+.soal-card h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.opsi {
+  display: block;
+  background: #f5f7fa;
+  border: 2px solid #e0e6ed;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14.5px;
+}
+
+.opsi:hover {
+  border-color: #2a5298;
+}
+
+.opsi.dipilih {
+  background: #e8f0fe;
+  border-color: #2a5298;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  flex: 1;
+}
+
+#btn-selesai {
+  background: #27ae60;
+}
+
+#btn-selesai:hover {
+  background: #1e8449;
+}
+
+.nomor-soal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.nomor-soal span {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dde4ec;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nomor-soal span.aktif {
+  background: #2a5298;
+  color: #fff;
+}
+
+.nomor-soal span.terjawab {
+  background: #43cea2;
+  color: #fff;
+}
+
+.result-card {
+  text-align: center;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#43cea2 0%, #dde4ec 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e3c72;
+  margin: 20px auto;
+}
+
+#result-detail {
+  margin-bottom: 20px;
+  color: #556;
+}
+
+.review-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.review-item.benar {
+  border-left: 5px solid #27ae60;
+}
+
+.review-item.salah {
+  border-left: 5px solid #e74c3c;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #99a;
+}
